@@ -1,12 +1,12 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class AtividadeTest {
+public class CE009 {
    @Test
-    public void CT001(){
+    public void CT009(){
        Assertions.assertThrows(ValoresInvalidosException.class, ()->{
            Avaliacao avaliacao = new Avaliacao();
-           avaliacao.avalia(-0.01,3.00,3,4);
+           avaliacao.avalia(10.00,3.00,0,4);
        });
     }
 }
