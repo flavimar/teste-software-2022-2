@@ -6,7 +6,7 @@ public class CE005 {
     public void CT005(){
        Assertions.assertThrows(ValoresInvalidosException.class, ()->{
            Avaliacao avaliacao = new Avaliacao();
-           avaliacao.avalia(3.00,-10.01,3,4);
+           avaliacao.avalia(3.00,10.01,3,4);
        });
     }
 }
